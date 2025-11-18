@@ -1,0 +1,344 @@
+
+*{
+	margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.format{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* width: 100%; */
+    /* overflow: hidden; */
+    background-image: url("../public/moto/homepage-fwcta-alt-1920x768.jpg");
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+    background-position: center; 
+    /* background-size: 100vh */
+}
+
+.texte{
+    /* display: flex; */
+    justify-content: left;
+    align-items: center;
+    align-content: center;
+    padding-top: 250px;
+    margin-left: 5%;
+    color: white
+
+}
+
+.title{
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+}
+
+.title2{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+.title3{
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+.center{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 100px;
+    font-family: "Roboto", sans-serif;
+}
+
+.center1{
+    text-align: center;  
+    padding-top: 130px;
+    font-family: "Roboto", sans-serif;
+}
+.center1 h1 {
+    margin-bottom: 150px;
+}
+
+.icone{
+    margin-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    background: rgba(151, 8, 8, 0.18);
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    transition: 0.3s ease;
+    cursor: pointer;
+    border: none; 
+}
+
+.icone:hover {
+    background: rgba(80, 74, 74, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.15);
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    /* max-width: 1200px; */
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    /* transition: transform 0.5s ease; */
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.slide img {
+    width: 60%;
+    height: 75%;
+     object-fit: cover;
+    margin-left: 0; */
+}
+
+.slide-text {
+    width: 40%;
+    color: #111211;
+    font-family: "Roboto", sans-serif;
+}
+
+.next {
+    position: absolute;
+    top: 0%;
+    background: rgba(151, 8, 8, 0.18);
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+   
+}
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.next { right: 20px; } 
+
+/* .colonne{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
+   gap: 10px;
+   margin: 20px;
+} */
+
+/* .colonne1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+     margin: 10px;
+   
+} */
+
+/* .title3{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} */
+
+/* .title4{
+    font-size: 18px;
+    text-align: justify;
+} */
+
+/* .size{
+    width: 490px;
+    height: 300px;
+} */
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.content-img{
+    width: 480px;
+    height: 300px;
+}
+
+.content-title{
+    font-size: 20px;
+    padding-top:  10px;
+    padding-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+.content-text{
+    text-align: left;
+    padding-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 30;
+}
+
+.content-btm{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding-top:  30px;
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    transition: color 0.3s ease;
+}
+.content-btm:hover {
+    color: rgb(180, 0, 0);
+}
+
+.colonne1 .content-img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+    border-radius: 6px;
+}
+
+.colonne1:hover .content-img {
+    transform: scale(1.03);     
+    filter: brightness(95%);     
+}
+
+.content-text1{
+    text-align: left;
+    padding-bottom: 0px;
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 30; */
+}
+.center2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 50px;
+    font-family: "Roboto", sans-serif;
+}
+.Mosaique{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	width: 80%;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.cube{
+	display: flex;
+	justify-content: center;
+}
+.Mosaique img {
+  width: 100%;
+  height: 70%;
+  display: block;
+  border-radius: 8px;
+} 
+
+.Mosaique {
+  gap: 10px;
+}
+.title4{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 5%;
+}
+
+.contact-section {
+padding: 60px 20px;
+text-align: center;
+background: #d68d0e;
+color: white;
+font-family: "Roboto", sans-serif;
+margin-top: 80px;
+}
+.contact-title {
+font-size: 32px;
+margin-bottom: 10px;
+font-weight: 500;
+
+}
+.contact-sub {
+font-size: 18px;
+opacity: 0.8;
+margin-bottom: 25px;
+}
+.contact-box {
+background: rgba(255, 255, 255, 0.05);
+display: inline-block;
+padding: 25px 35px;
+border-radius: 12px;
+border: 1px solid rgba(212, 176, 15, 0.1);
+backdrop-filter: blur(4px);
+text-align: left;
+}
+.contact-box p {
+margin: 8px 0;
+font-size: 16px;
+font-family: "Roboto", sans-serif;
+}
+.contact-btn {
+margin-top: 15px;
+padding: 12px 25px;
+background: rgba(219, 122, 12, 0.6);
+color: white;
+border: none;
+border-radius: 6px;
+font-size: 18px;
+cursor: pointer;
+transition: 0.3s;
+}
+.contact-btn:hover {
+background: rgba(182, 132, 5, 0.9);
+transform: translateY(-3px);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.nav-btn {
+  padding: 12px 24px;
+  background: rgba(151, 8, 8, 0.18);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: rgba(80, 74, 74, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255,255,255,0.15);
+}
+
+
