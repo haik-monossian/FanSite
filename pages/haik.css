@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* 100 to 900 */
+    font-style: normal;
+}
+
+.presentation{
+    background-image: 
+        radial-gradient(
+            ellipse at center,
+            transparent 60%,
+            rgba(0,0,0,0.3) 100%
+        ),
+        url("../public/bmw/M4_coté.jpg");
+    background-position: 100% 30%;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+}
+
+.presentation h1{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.15) 70%, transparent) 100%;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    text-align: center;
+    color: white;
+    padding: 8vh 2vw;
+    font-weight: 100; /* 100 to 900 */
+    font-size: clamp(1rem, 5vw, 4rem); /* min , value , max */
+}
+
+.presentation svg{
+    position: relative;
+    rotate: 90deg;
+    width: 3vw;
+    left: 50%;
+    bottom: -50%;
+    animation: jump 1s ease-in-out infinite;
+}
+
+.presentation svg:hover{
+    transform:scale(1.1);
+    animation: none;
+    cursor: pointer;
+}
+
+@keyframes jump {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-1vh);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* -----------Introduction---------- */
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    padding: 8em;
+    padding-bottom: 4em ;
+}
+
+.introduction h2{
+    padding: 2em 0;
+    font-weight: 800; /* 100 to 900 */
+    font-size: x-large;
+}
+
+.introduction div{
+    display: flex;
+}
+
+.introduction img{
+    width: 50vw;
+    height: 400px;
+    object-fit: cover;
+}
+
+.introduction p{
+    margin: 2em 4em;
+    margin-right: 0;
+    font-size: larger;
+    line-height: 1.8em;
+    letter-spacing: -0.5px;
+}
+
+
+/* -----------Transition---------- */
+
+.transition{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(132, 169, 201);
+    height: 20vh;
+    margin: 20vh 0;
+}
+
+
+/* .polygons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.polygons svg{
+    scale: 10;
+} */
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4em;
+}
+
+.slider button{
+    width: 50px;
+    height: 50px;
+}
+
+.slider button svg{
+    width: 50px;
+    height: 50px;
+}
+
+.slider img{
+    width: 60vw;
+    height: 60vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+.slide {
+    display: none;
+}
+  
+.slide.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.prev, .next {
+    background: none;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+.prev {
+    rotate: 180deg;
+  }
+
+.slide h2{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.slide p{
+    margin: 0 10vw;
+    height: 10vh;
+}
