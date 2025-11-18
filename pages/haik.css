@@ -185,14 +185,15 @@
 main > nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     margin: 40px 0;
     padding: 20px;
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    flex-wrap: wrap;
 }
 
 main > nav a {
-    padding: 12px 24px;
+    padding: 12px 20px;
     background: rgba(255, 255, 255, 0.1);
     color: white;
     text-decoration: none;
@@ -200,6 +201,8 @@ main > nav a {
     font-weight: 600;
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    min-width: 120px;
 }
 
 main > nav a:hover {
@@ -208,8 +211,26 @@ main > nav a:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* -----------Contact Form---------- */
+/* --------- Back Button ------------ */
+.back-btn {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
 
+.back-btn:hover {
+    transform: translateY(-2px);
+    color: white;
+    text-decoration: none;
+}
+
+/* -----------Contact Page---------- */
 .contact {
     padding: 4em;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -292,21 +313,277 @@ main > nav a:hover {
     transform: translateY(0);
 }
 
-/* --------- Back Button ------------ */
-.back-btn {
-    display: inline-block;
-    margin: 20px;
-    padding: 10px 20px;
+
+/* --------- Discover page ------------ */
+.discover-hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.discover-description {
+    padding: 4em;
+    background: #f8f9fa;
+}
+
+.discover-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ------------ Gallery Page-------- */
+.gallery-header {
+    text-align: center;
+    padding: 3em;
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+}
+
+.gallery-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.gallery-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+/* --------- Social Page -------------- */
+.social-header {
+    text-align: center;
+    padding: 3em;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+}
+
+.social-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.social-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 3em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-card {
+    background: white;
+    padding: 2em;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5em;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1em;
+    font-size: 1.3rem;
+}
+
+.social-card p {
+    color: #666;
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+}
+
+.social-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2c3e50;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
-    transition: transform 0.2s ease;
+    transition: background 0.3s ease;
 }
 
-.back-btn:hover {
-    transform: translateY(-2px);
+.social-link:hover {
+    background: #34495e;
+}
+
+/* ------------ Palmares ---------------- */
+.palmares-header {
+    text-align: center;
+    padding: 3em;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
-    text-decoration: none;
+}
+
+.palmares-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.palmares-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.palmares-table {
+    padding: 3em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    background: #2c3e50;
+    color: white;
+    padding: 1.2em;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 1em;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+tr:hover {
+    background: #e9ecef;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 25%;
+    font-weight: 600;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 20%;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 55%;
+}
+
+.palmares-notes {
+    padding: 2em 3em;
+    background: #f8f9fa;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.palmares-notes h2 {
+    color: #2c3e50;
+    margin-bottom: 1em;
+}
+
+.palmares-notes p {
+    line-height: 1.6;
+    color: #666;
 }
