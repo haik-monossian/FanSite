@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* 100 to 900 */
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 4em;
+    height: 100px;
+    background-color:  rgb(38, 48, 56);
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+header .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#btn-metro:hover, #btn-car:hover, #btn-moto:hover, #btn-bike:hover{
+    transform: translate(-4px, -4px);
+
+}
+
+#btn-metro:hover{
+    box-shadow: 4px 4px 0 rgba(255, 85, 0, 0.8);
+}
+
+#btn-car:hover{
+    box-shadow: 4px 4px 0 rgb(79, 118, 157, 0.8);
+}
+
+#btn-moto:hover{
+    box-shadow: 4px 4px 0 rgb(255, 166, 0, 0.8);
+}
+
+#btn-bike:hover{
+    box-shadow: 4px 4px 0 rgb(255, 0, 0, 0.8);
+}
+
+main{
+    min-height: 100vh;
+}
+
+footer{
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(38, 48, 56);
+    padding: 0 2em;
+    color: white;
+}
+
+footer div{
+    display: flex;
+    gap: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
