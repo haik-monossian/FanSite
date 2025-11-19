@@ -1,6 +1,7 @@
 *{
     margin: 0;
     scroll-behavior: smooth;
+    scrollbar-width:none;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500; /* 100 to 900 */
@@ -15,12 +16,17 @@
             rgba(0,0,0,0.3) 100%
         ),
         url("../public/bmw/M4_coté.jpg");
-    background-position: 100% 30%;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 105%;
+    background-size: cover;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .presentation h1{
@@ -29,17 +35,16 @@
     line-height: 1.5em;
     text-align: center;
     color: white;
-    padding: 8vh 2vw;
+    padding: 8vh 2vw 0 2vw;
     font-weight: 100; /* 100 to 900 */
+    width: 100%;
     font-size: clamp(1rem, 5vw, 4rem); /* min , value , max */
 }
 
 .presentation svg{
-    position: relative;
+    margin-bottom: 2vh;
     rotate: 90deg;
-    width: 3vw;
-    left: 50%;
-    bottom: -50%;
+    width:  clamp(1rem, 5vw, 3rem);
     animation: jump 1s ease-in-out infinite;
 }
 
@@ -177,7 +182,7 @@
 
 .slide p{
     margin: 0 10vw;
-    height: 10vh;
+    height: auto;
 }
 
 /* -------- Navigation ------------ */
@@ -324,7 +329,7 @@ main > nav a:hover {
 
 .hero-image img {
     width: 100%;
-    height: 100%;
+    min-height: 80vh;
     object-fit: cover;
 }
 
@@ -586,4 +591,29 @@ th:nth-child(3), td:nth-child(3) {
 .palmares-notes p {
     line-height: 1.6;
     color: #666;
+}
+
+/*----- RESPONSIVE ---------*/
+
+@media (max-width: 1278px){
+    .introduction{
+        align-items: center;
+    }
+
+    .introduction div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introduction h2{
+        width: 80vw;
+    }
+
+    .introduction img{
+        width: 80vw;
+    }
+    
+    .introduction p{
+        margin: 4em 0;
+    }
 }
