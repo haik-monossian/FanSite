@@ -4,6 +4,7 @@
     font-optical-sizing: auto;
     font-weight: 400; /* 100 to 900 */
     font-style: normal;
+    scrollbar-width:none;
 }
 
 .Home-header{
@@ -65,9 +66,37 @@
     transform: translate(4px, -4px);
 }
 
-.Home{
-    min-height: 100vh;
+.video-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+.video-section video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
+
+.filter{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.overlay-text {
+    margin-bottom: 6vw;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+  
 
 .Home-footer{
     bottom: 0;
