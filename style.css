@@ -1,12 +1,17 @@
+*{
+    scrollbar-width:none; /* Remove scrollbar */
+}
+
+/* ------------ Body ------------ */
 .Home-body{
     margin: 0;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400; /* 100 to 900 */
     font-style: normal;
-    scrollbar-width:none;
 }
 
+/* ------------ Header ------------ */
 .Home-header{
     display: flex;
     flex-wrap: wrap;
@@ -66,6 +71,7 @@
     transform: translate(4px, -4px);
 }
 
+/* ------------ Main ------------ */
 .Home .video-section {
     position: relative;
     display: flex;
@@ -97,7 +103,7 @@
     z-index: 1;
 }
   
-
+/* ------------ Footer ------------ */
 .Home-footer{
     bottom: 0;
     display: flex;
