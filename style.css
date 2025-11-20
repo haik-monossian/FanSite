@@ -1,4 +1,4 @@
-*{
+.Home-body{
     margin: 0;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -6,22 +6,25 @@
     font-style: normal;
 }
 
-header{
+.Home-header{
     display: flex;
-    justify-content: flex-end;
-    padding: 0 4em;
-    height: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
     background-color:  rgb(38, 48, 56);
 }
 
-header div{
+.Home-header div{
+    flex-wrap: wrap;
+    padding: 2em 4em;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3em;
 }
 
-header .btn{
+.Home-header .btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,11 +60,16 @@ header .btn{
     box-shadow: 4px 4px 0 rgb(255, 0, 0, 0.8);
 }
 
-main{
+#btn-home:hover{
+    box-shadow: -4px 4px 0 rgba(83, 83, 83, 0.8);
+    transform: translate(4px, -4px);
+}
+
+.Home{
     min-height: 100vh;
 }
 
-footer{
+.Home-footer{
     bottom: 0;
     display: flex;
     justify-content: space-between;
@@ -72,12 +80,12 @@ footer{
     color: white;
 }
 
-footer div{
+.Home-footer div{
     display: flex;
     gap: 20px;
 }
 
-footer a{
+.Home-footer a{
     color: white;
     text-decoration: none;
 }
