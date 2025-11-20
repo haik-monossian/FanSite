@@ -352,9 +352,6 @@ transform: translateY(-3px);
     }
 }
 
-/* ------------------------- */
-/*  TABLETTES + PETITS – IPAD PORTRAIT <=768px */
-/* ------------------------- */
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -397,9 +394,6 @@ transform: translateY(-3px);
     }
 }
 
-/* ------------------------- */
-/*  SMARTPHONES – <=480px    */
-/* ------------------------- */
 @media (max-width: 480px) {
     .content {
         flex-direction: column;
