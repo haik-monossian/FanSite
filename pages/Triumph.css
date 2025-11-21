@@ -451,7 +451,6 @@
     }
 }
 
-/* Contact Form Styles */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -459,7 +458,7 @@
     margin-top: 20px;
     width: 100%;
     max-width: 400px;
-    /* Limit width for better readability */
+
 }
 
 .form-group {
@@ -479,7 +478,6 @@
     outline: none;
     transition: 0.3s ease;
     box-sizing: border-box;
-    /* Ensure padding doesn't affect width */
 }
 
 .contact-form input::placeholder,
@@ -496,18 +494,14 @@
 
 .contact-form textarea {
     resize: vertical;
-    /* Allow vertical resizing only */
     min-height: 100px;
 }
 
-/* Adjust Contact Box for Form */
 .contact-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Center content horizontally */
     max-width: 500px;
-    /* Slightly wider to accommodate form */
     margin: 0 auto;
-    /* Center the box itself */
+   
 }
