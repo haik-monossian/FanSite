@@ -1,19 +1,19 @@
-
-*{
-	margin: 0;
+* {
+    margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-.format{
+
+.format {
     background-image: url("../public/moto/homepage-fwcta-alt-1920x768.jpg");
     background-repeat: no-repeat;
     height: 90vh;
     background-size: cover;
-    background-position: center; 
-   
+    background-position: center;
+
 }
 
-.texte{
+.texte {
 
     justify-content: left;
     align-items: center;
@@ -21,33 +21,33 @@
     padding-top: 250px;
     margin-left: 5%;
     color: white
-
 }
 
-.title{
+.title {
     font-size: 50px;
     font-family: "Roboto", sans-serif;
 }
 
-.title2{
+.title2 {
     padding-top: 100px;
     font-size: 25px;
     font-weight: 300;
     font-family: "Roboto", sans-serif;
 }
 
-.title6{
+.title6 {
     /* padding-top: 100px; */
     font-size: 25px;
     font-weight: 300;
     font-family: "Roboto", sans-serif;
 }
 
-.title3{
+.title3 {
     font-size: 18px;
     font-family: "Roboto", sans-serif;
 }
-.center{
+
+.center {
 
     display: flex;
     justify-content: center;
@@ -57,16 +57,17 @@
     font-family: "Roboto", sans-serif;
 }
 
-.center1{
-    text-align: center;  
+.center1 {
+    text-align: center;
     padding-top: 130px;
     font-family: "Roboto", sans-serif;
 }
+
 .center1 h1 {
     margin-bottom: 150px;
 }
 
-.icone{
+.icone {
     margin-top: 25px;
     display: inline-flex;
     align-items: center;
@@ -81,13 +82,13 @@
     backdrop-filter: blur(5px);
     transition: 0.3s ease;
     cursor: pointer;
-    border: none; 
+    border: none;
 }
 
 .icone:hover {
     background: rgba(80, 74, 74, 0.3);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(255,255,255,0.15);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
 }
 
 .slider {
@@ -113,7 +114,7 @@
     width: 60%;
     height: 75%;
     object-fit: cover;
-    margin-left: 0; 
+    margin-left: 0;
 }
 
 .slide-text {
@@ -131,16 +132,19 @@
     font-size: 20px;
     padding: 10px 20px;
     cursor: pointer;
-   
+
 }
 
-.prev:hover, .next:hover {
-    background: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background: rgba(0, 0, 0, 0.8);
 }
 
-.next { right: 20px; } 
+.next {
+    right: 20px;
+}
 
-.content{
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,34 +153,35 @@
 
 }
 
-.content-img{
+.content-img {
     width: 480px;
     height: 300px;
 }
 
-.content-title{
+.content-title {
     font-size: 20px;
-    padding-top:  10px;
+    padding-top: 10px;
     padding-bottom: 10px;
     font-family: "Roboto", sans-serif;
 }
 
-.content-text{
+.content-text {
     text-align: left;
     padding-bottom: 30px;
     font-family: "Roboto", sans-serif;
     font-weight: 30;
 }
 
-.content-btm{
+.content-btm {
     font-size: 16px;
     text-decoration: none;
     color: black;
-    padding-top:  30px;
+    padding-top: 30px;
     padding-bottom: 20px;
     font-family: "Roboto", sans-serif;
     transition: color 0.3s ease;
 }
+
 .content-btm:hover {
     color: rgb(180, 0, 0);
 }
@@ -187,16 +192,17 @@
 }
 
 .colonne1:hover .content-img {
-    transform: scale(1.03);     
-    filter: brightness(95%);     
+    transform: scale(1.03);
+    filter: brightness(95%);
 }
 
-.content-text1{
+.content-text1 {
     text-align: left;
     padding-bottom: 0px;
     font-family: "Roboto", sans-serif;
 }
-.center2{
+
+.center2 {
 
     display: flex;
     justify-content: center;
@@ -205,29 +211,32 @@
     padding-top: 50px;
     font-family: "Roboto", sans-serif;
 }
-.Mosaique{
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	width: 80%;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-}
-
-.cube{
-	display: flex;
-	justify-content: center;
-}
-.Mosaique img {
-  width: 100%;
-  height: 70%;
-  display: block;
-  border-radius: 8px;
-} 
 
 .Mosaique {
-  gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
-.title4{
+
+.cube {
+    display: flex;
+    justify-content: center;
+}
+
+.Mosaique img {
+    width: 100%;
+    height: 70%;
+    display: block;
+    border-radius: 8px;
+}
+
+.Mosaique {
+    gap: 10px;
+}
+
+.title4 {
     font-size: 25px;
     font-weight: 300;
     font-family: "Roboto", sans-serif;
@@ -235,78 +244,85 @@
 }
 
 .contact-section {
-padding: 60px 20px;
-text-align: center;
-background: #d68d0e;
-color: white;
-font-family: "Roboto", sans-serif;
-margin-top: 80px;
+    padding: 60px 20px;
+    text-align: center;
+    background: #d68d0e;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin-top: 80px;
 }
+
 .contact-title {
-font-size: 32px;
-margin-bottom: 10px;
-font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 500;
 
 }
+
 .contact-sub {
-font-size: 18px;
-opacity: 0.8;
-margin-bottom: 25px;
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 25px;
 }
+
 .contact-box {
-background: rgba(255, 255, 255, 0.05);
-display: inline-block;
-padding: 25px 35px;
-border-radius: 12px;
-border: 1px solid rgba(212, 176, 15, 0.1);
-backdrop-filter: blur(4px);
-text-align: left;
+    background: rgba(255, 255, 255, 0.05);
+    display: inline-block;
+    padding: 25px 35px;
+    border-radius: 12px;
+    border: 1px solid rgba(212, 176, 15, 0.1);
+    backdrop-filter: blur(4px);
+    text-align: left;
 }
+
 .contact-box p {
-margin: 8px 0;
-font-size: 16px;
-font-family: "Roboto", sans-serif;
+    margin: 8px 0;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
 }
+
 .contact-btn {
-margin-top: 15px;
-padding: 12px 25px;
-background: rgba(219, 122, 12, 0.6);
-color: white;
-border: none;
-border-radius: 6px;
-font-size: 18px;
-cursor: pointer;
-transition: 0.3s;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: rgba(219, 122, 12, 0.6);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
 .contact-btn:hover {
-background: rgba(182, 132, 5, 0.9);
-transform: translateY(-3px);
+    background: rgba(182, 132, 5, 0.9);
+    transform: translateY(-3px);
 }
 
 .nav-buttons {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
 }
 
 .nav-btn {
-  padding: 12px 24px;
-  background: rgba(151, 8, 8, 0.18);
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  border-radius: 8px;
-  backdrop-filter: blur(5px);
-  text-decoration: none;
-  transition: 0.3s ease;
+    padding: 12px 24px;
+    background: rgba(151, 8, 8, 0.18);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 
 .nav-btn:hover {
-  background: rgba(80, 74, 74, 0.3);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255,255,255,0.15);
+    background: rgba(80, 74, 74, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
 }
+
 @media (max-width: 1024px) {
     .content {
         flex-direction: row;
@@ -347,7 +363,8 @@ transform: translateY(-3px);
         height: auto;
     }
 
-    body, html {
+    body,
+    html {
         overflow-x: hidden;
     }
 }
@@ -412,7 +429,8 @@ transform: translateY(-3px);
         font-size: 18px;
     }
 
-    .content-text, .content-text1 {
+    .content-text,
+    .content-text1 {
         font-size: 14px;
     }
 
@@ -433,9 +451,63 @@ transform: translateY(-3px);
     }
 }
 
+/* Contact Form Styles */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    /* Limit width for better readability */
+}
 
+.form-group {
+    width: 100%;
+}
 
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+    box-sizing: border-box;
+    /* Ensure padding doesn't affect width */
+}
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(212, 176, 15, 0.8);
+    box-shadow: 0 0 10px rgba(212, 176, 15, 0.2);
+}
 
+.contact-form textarea {
+    resize: vertical;
+    /* Allow vertical resizing only */
+    min-height: 100px;
+}
 
+/* Adjust Contact Box for Form */
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally */
+    max-width: 500px;
+    /* Slightly wider to accommodate form */
+    margin: 0 auto;
+    /* Center the box itself */
+}
