@@ -1,5 +1,6 @@
 *{
     scrollbar-width:none; /* Remove scrollbar */
+
 }
 
 /* ------------ Body ------------ */
@@ -12,7 +13,7 @@
 }
 
 /* ------------ Header ------------ */
-.Home-header{
+.Home-header nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -72,7 +73,9 @@
 }
 
 /* ------------ Main ------------ */
+
 .Home .video-section {
+    margin: 0;
     position: relative;
     display: flex;
     align-items: center;

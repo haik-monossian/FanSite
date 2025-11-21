@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+        <link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-</head>
-<body class="Home-body">
-    <header class="Home-header">
-        <div>
-            <a href="/FanSite/index.html" class="btn" id="btn-home">Accueil</a>
-        </div>
-        <div>
-            <a href="" class="btn" id="btn-metro">Métro</a>
-            <a href="/FanSite/pages/haik.html" class="btn" id="btn-car">Voiture</a>
-            <a href="" class="btn" id="btn-moto">Moto</a>
-            <a href="" class="btn" id="btn-bike">Vélo</a>
-        </div>
-    </header>
+    </head>
 
-    <main class="Home">
-        <section class="video-section">
-          <video autoplay muted loop playsinline width="100%">
-            <source src="public/Vœux_de_véhicules_et_de_vélo.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la vidéo HTML5.
-          </video>
-          <div class="filter"></div>
-          <div class="overlay-text">
-            <h2>Transportez-Vous</h2>
-            <p>Au-delà du trajet, une expérience</p>
-          </div>
-        </section>
-      </main>      
+    <body class="Home-body">
 
-    <footer class="Home-footer">
-        <div>
-            <a href="">Politique de confidentialité</a>
-            <a href="">Cookies</a>
-            <a href="">Mentions légales</a>
-        </div>
-        <div>
-            <span>Roven</span>
-            <span>Fabio</span>
-            <span>Idris</span>
-            <span>Haik</span>
-        </div>
-    </footer>
-</body>
+        <header class="Home-header">
+            <nav aria-label="Navigation principale">
+                <div>
+                    <a href="/FanSite/index.html" class="btn" id="btn-home">Accueil</a>
+                </div>
+                <div>
+                    <a href="" class="btn" id="btn-metro">Métro</a>
+                    <a href="/FanSite/pages/haik.html" class="btn" id="btn-car">Voiture</a>
+                    <a href="" class="btn" id="btn-moto">Moto</a>
+                    <a href="" class="btn" id="btn-bike">Vélo</a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="Home">
+            <figure class="video-section">
+                
+                <video autoplay muted loop playsinline width="100%">
+                    <source src="public/Vœux_de_véhicules_et_de_vélo.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo HTML5.
+                </video>
+
+                <div class="filter"></div>
+
+                <figcaption class="overlay-text">
+                    <h2>Transportez-Vous</h2>
+                    <p>Au-delà du trajet, une expérience</p>
+                </figcaption>
+
+            </figure>
+        </main>      
+
+        <footer class="Home-footer" role="contentinfo">
+            <div>
+                <a href="">Politique de confidentialité</a>
+                <a href="">Cookies</a>
+                <a href="">Mentions légales</a>
+            </div>
+            <div>
+                <span>Roven</span>
+                <span>Fabio</span>
+                <span>Idris</span>
+                <span>Haik</span>
+            </div>
+        </footer>
+
+    </body>
 </html>
