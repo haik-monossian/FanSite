@@ -1,0 +1,239 @@
+*{
+    scroll-behavior: smooth;
+     font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+   
+}
+.acceuil{
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d4d6d6;
+    
+}
+.description{
+    padding: 20px;
+    max-width:  1200px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .description .story {
+    font-size: 1rem; /* Légèrement plus petit sur mobile pour mieux s'intégrer */
+  }
+}
+.problem-text{
+    padding: 20px;
+    max-width:  1200px;
+    margin: 0 auto;
+}
+.main-pic{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+.logo{
+    position: absolute;
+    width: 150px;
+    height: auto;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ptitext{
+    position:absolute;
+    width: 150px;
+    top: 91%;
+    left: 4%;
+    color: whitesmoke;
+    /* background-color: rgba(0, 0, 255, 0.769); */
+}
+@media (max-width: 768px) {
+    .ptitext{
+        color: rgba(29, 70, 184, 0);
+    }
+}
+
+
+
+
+
+
+
+.story{
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.4;
+}
+.vieutrom{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+.problem{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.stat-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; 
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.stat-card {
+    flex: 1 1 200px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #2c3e50; 
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .stat-container {
+    flex-direction: column;
+    align-items: center;   
+  }
+  .stat-card {
+    width: 80%; 
+    margin-bottom: 15px;
+  }
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin: 0;
+}
+.text-stat {
+    text-align: center;
+}
+
+.futur{
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+
+.futur img{
+     width: 40%;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+
+}
+
+.news {
+    
+    flex-grow: 1;
+    min-width: 0;
+    background-color: rgb(214, 140, 3);
+    border: 1px solid #420f0f;
+    border-radius: 8px;
+    box-shadow:0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-top: 0;
+    color: #fbfcfd;
+}
+.horaires-pic{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.ancre-horaires{
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:#dba334 ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.ancre-horaires:hover{
+    background-color:#2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+.ancre-horaires:active{
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.retour-acceuil{
+     display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:#db9834 ;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.problematique{
+    padding: 2em;
+}
+
+
+/* .acceuil img{
+    position: relative;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+
+    
+} */
+
+.overlay-logo{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+}
