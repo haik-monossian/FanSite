@@ -237,3 +237,25 @@ body{
     top: 50%;
     left: 50%;
 }
+.boutow{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(133, 50, 211);
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: bottom 10px; ;
+}
+
+.boutow:hover{
+    background-color: rgb(216, 102, 3);
+}
+.zig{
+    text-align: center;
+    justify-content: center;
+}
+.boutow{
+     color: #edeceb;
+     background-color: #db9834;
+}

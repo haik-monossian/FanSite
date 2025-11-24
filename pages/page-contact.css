@@ -1,0 +1,140 @@
+/* --- 0. Réinitialisation et Base --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- 1. Style des Sections et du Formulaire --- */
+.contact-form-section, .contact-info-section {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2, .contact-info-section h2 {
+    color: #db9834; /* Utilisation de votre couleur d'accent */
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- 2. Mise en Forme des Champs du Formulaire --- */
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block; /* La balise prend toute la largeur */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Règle essentielle : 100% de largeur pour le responsive */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* IMPORTANT : Le padding n'ajoute pas à la largeur totale */
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Permet uniquement de redimensionner verticalement */
+}
+
+/* --- 3. Style du Bouton d'Envoi --- */
+.submit-button {
+    display: inline-block;
+    background-color: #db9834;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #fa9b02;
+}
+
+/* --- 4. Style des Informations de Contact (Desktop) --- */
+.contact-info-section {
+    display: flex; /* Utilisation de Flexbox pour aligner les cartes */
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.info-card {
+    flex: 1 1 30%; /* Sur desktop, chaque carte prend environ 30% de la largeur */
+    padding: 15px;
+    border: 1px solid #eee;
+    border-left: 5px solid #db9834;
+    border-radius: 4px;
+}
+
+.info-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.info-card a {
+    color: #db9834;
+    text-decoration: none;
+}
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+/* --- 5. MEDIA QUERY (Rendre la section info responsive sur mobile) --- */
+@media (max-width: 768px) {
+    
+    /* Les cartes d'information passent en colonne sur mobile */
+    .contact-info-section {
+        flex-direction: column;
+    }
+
+    .info-card {
+        flex: 1 1 100%; /* Chaque carte prend 100% de la largeur */
+        margin-bottom: 15px;
+    }
+}
+.bouton-accueil {
+    display: inline-block;
+    padding: 10px 18px;
+    justify-content: center;
+    background-color:#db9834 ;
+    color: #333; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    border: 1px solid #ccc; 
+    font-size: 0.95rem;
+    font-weight: normal; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 40%;
+    margin-top: 5%;
+    
+}
+
+.bouton-accueil:hover {
+    background-color: #fa9b02;
+}
