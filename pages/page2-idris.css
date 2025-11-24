@@ -1,0 +1,118 @@
+*{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; 
+    font-style: normal;
+   
+}
+body{
+    background-color: #d4d6d6;
+    overflow-x: hidden;
+}
+.vieumetro{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
+    width: 90%;
+    margin: 40px auto;
+
+}
+.vieumetro-image{
+    width: 45%; 
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+    border-radius: 8px;
+
+}
+
+.logo{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+footer {
+    width: 100%; 
+    padding: 200px 0;
+    text-align: center; /* TRÈS IMPORTANT : Centre le lien <a> horizontalement */
+    background-color: #d4d6d6;
+    margin-top: 50px; /* Ajoute un espace avec le contenu au-dessus */
+}
+
+/* Style du bouton (Sobres, revu pour le centrage) */
+.bouton-accueil {
+    display: inline-block; /* Nécessaire pour que text-align: center fonctionne sur le parent */
+    padding: 10px 18px; 
+    
+    /* Style sobre */
+    background-color:#db9834 ;
+    color: #333; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    border: 1px solid #ccc; 
+    font-size: 0.95rem;
+    font-weight: normal; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.bouton-accueil:hover {
+    background-color: #fa9b02;
+}
+.bouton-accueil1{
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px;
+     background-color: #f4f4f4; 
+    color: #333; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    border: 1px solid #ccc; 
+    font-size: 0.95rem;
+    font-weight: normal; 
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.bouton-accueil1:hover{
+    background-color: #fa9b02;
+}
+.worker-pic{
+     display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    position: relative;
+    width: 90%;
+    margin: 40px auto;
+}
+.worker-pic image{
+    width: 45%; 
+    height: auto; 
+    display: block;
+    flex-shrink: 0;
+    border-radius: 8px;
+
+}
+.text-story{
+    padding: 20px;
+    max-width:  1200px;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .logo {
+        width: 70px; 
+        top: 30px; 
+    }
+    .text-story h1 {
+        font-size: 1.1rem;
+    }
+}

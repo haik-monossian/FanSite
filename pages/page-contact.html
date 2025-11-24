@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page contzct rtm</title>
+    <link rel="stylesheet" href="page-contact.css">
+    <link rel="stylesheet" href="/FanSite/style.css">
+     <link rel="icon" type="image/png" href="../public/images/logortm.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="Home-header">
+        <nav aria-label="Navigation principale">
+            <div>
+                <a href="/FanSite/index.html" class="btn" id="btn-home">Accueil</a>
+            </div>
+            <div>
+                <a href="/FanSite/pages/idris.html" class="btn" id="btn-metro">Métro</a>
+                <a href="/FanSite/pages/haik.html" class="btn" id="btn-car">Voiture</a>
+                <a href="/FanSite/pages/Triumph.html" class="btn" id="btn-moto">Moto</a>
+                <a href="" class="btn" id="btn-bike">Vélo</a>
+            </div>
+        </nav>
+    </header>
+   <a href="idris.html" class="bouton-accueil">
+            Retour à l'accueil
+        </a>
+    <main>
+        <h1>Nous contacter</h1>
+        <p>Avez-vous des questions ? Envoyez-nous un message ou trouvez nos coordonnées ci-dessous.</p>
+
+        <section class="contact-form-section">
+            <h2>Formulaire de contact</h2>
+            
+            <form action="traitement_formulaire.php" method="post" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="objet">Objet :</label>
+                    <input type="text" id="objet" name="objet">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Votre message :</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Envoyer le message</button>
+            </form>
+        </section>
+        
+        <section class="contact-info-section">
+            <h2>Informations Utiles</h2>
+            
+            <div class="info-card">
+                <h3>Téléphone</h3>
+                <p><a href="tel:+33123456789">01 23 45 67 89</a></p>
+            </div>
+            
+            <div class="info-card">
+                <h3>Adresse</h3>
+                <address>
+                    123 Rue de la Liberté<br>
+                    13000 Marseille, France
+                </address>
+                <a href="[Lien Google Maps]" target="_blank">Voir sur la carte</a>
+            </div>
+
+            <div class="info-card">
+                <h3>Horaires</h3>
+                <p>Du lundi au vendredi : 9h00 – 17h00</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [Nom de votre site]. Tous droits réservés.</p>
+    </footer>
+    <footer class="Home-footer" role="contentinfo">
+        <div>
+            <a href="">Politique de confidentialité</a>
+            <a href="">Cookies</a>
+            <a href="">Mentions légales</a>
+        </div>
+        <div>
+            <span>Roven</span>
+            <span>Fabio</span>
+            <span>Idris</span>
+            <span>Haik</span>
+        </div>
+    </footer>
+</body>
+</html>
