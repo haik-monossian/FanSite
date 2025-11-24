@@ -1,0 +1,396 @@
+/* ----- GLOBAL ----- */
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: #000;
+
+}
+
+.layout {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-color: #000;
+    color: #ff003c;
+
+}
+
+/* ----- HEADER ----- */
+.site-header {
+    background: #000;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header .titre-santacruz {
+    font-family: 'Alfa Slab One', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #ff003c;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav a:hover {
+    color: #ff003c;
+}
+
+/* ----- HERO IMAGE ----- */
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ----- MODELE EMBLEMATIQUE ----- */
+.featured-model {
+    font-family: 'Alfa Slab One', serif;
+    text-align: center;
+    color: #ff003c;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+/* ----- VIDEO SECTION ----- */
+.video-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.video-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+    pointer-events: none;
+    opacity: 0.65;
+}
+
+#velo-santa-cruz {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+/* ----- CATALOGUE ----- */
+.catalogue {
+    padding: 60px 40px;
+    background: #000;
+}
+
+.catalogue h2 {
+    font-family: 'Alfa Slab One', serif;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.catalogue-item {
+    background: #000;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalogue-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.catalogue-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ----- HISTOIRE ----- */
+.histoire {
+    padding: 60px 40px;
+    background-color: #000;
+    color: #ff003c;
+    font-family: 'Tinos', serif;
+}
+
+.histoire h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.histoire-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.histoire-text {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.histoire-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ----- BOUTON RETOUR EN HAUT ----- */
+.back-to-top {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back-to-top a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff003c;
+    color: #000;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.back-to-top a:hover {
+    background-color: #b80028;
+    transform: scale(1.05);
+}
+
+/* ======== RESPONSIVE TABLETTE ======== */
+@media (max-width: 1024px) and (min-width: 769px) {
+
+    /* Header */
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .site-header .titre-santacruz {
+        font-size: 30px;
+    }
+
+    /* Catalogue */
+    .catalogue-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .catalogue h2 {
+        font-size: 50px;
+    }
+
+    /* Vidéo */
+    .video-text {
+        font-size: 100px;
+    }
+
+    /* Histoire */
+    .histoire h2 {
+        font-size: 36px;
+    }
+}
+
+/* ======== RESPONSIVE MOBILE ======== */
+@media (max-width: 768px) {
+
+    /* Header et navigation */
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .site-header .titre-santacruz {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    /* Hero et vidéo */
+    .video-wrapper {
+        display: block;
+    }
+
+    .video-text {
+        font-size: 80px;
+    }
+
+    #velo-santa-cruz {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Catalogue */
+    .catalogue-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .catalogue h2 {
+        font-size: 40px;
+    }
+
+    /* Histoire */
+    .histoire-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .histoire-text {
+        text-align: center;
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .histoire-image img {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    /* Bouton retour en haut */
+    .back-to-top a {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+/* ----- CONTACT FORM ----- */
+.contact {
+    padding: 60px 40px;
+    background: #000;
+    color: #ff003c;
+    font-family: 'Tinos', serif;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-family: 'Alfa Slab One', serif;
+    letter-spacing: 2px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background: #0a0a0a;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #ff003c;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #ff003c;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #1a1a1a;
+    color: white;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff003c;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.btn-send {
+    width: 100%;
+    padding: 15px;
+    background: #ff003c;
+    border: none;
+    font-size: 18px;
+    font-family: 'Alfa Slab One', serif;
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-send:hover {
+    background: #b80028;
+    transform: scale(1.03);
+}
+
+/* ----- Responsive contact ----- */
+@media (max-width: 768px) {
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
