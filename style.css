@@ -21,6 +21,7 @@
     width: 100%;
     background-color:  transparent;
     font-family: "Raleway", sans-serif;
+    z-index: 999;
 }
 
 .Home-header div{
@@ -118,6 +119,7 @@
     background-color: rgb(29, 29, 29);
     padding: 0 2em;
     color: white;
+    z-index: 999;
 }
 
 .Home-footer div{
